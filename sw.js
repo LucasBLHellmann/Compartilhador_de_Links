@@ -1,13 +1,13 @@
 const CACHE_NAME = 'linkshare-v1';
 const STATIC_CACHE_URLS = [
-  '/index.html',
-  '/style.css',
-  '/app.js',
-  '/LinkItem.js',
-  '/LinkList.js',
-  '/CategoryFilter.js',
-  '/image.png',
-  '/manifest.json'
+  'index.html',
+  'style.css',
+  'app.js',
+  'LinkItem.js',
+  'LinkList.js',
+  'CategoryFilter.js',
+  'image.png',
+  'manifest.json'
 ];
 
 self.addEventListener('install', event => {
