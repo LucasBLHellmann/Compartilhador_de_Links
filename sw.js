@@ -8,7 +8,7 @@ const STATIC_CACHE_URLS = [
   '/LinkList.js',
   '/CategoryFilter.js',
   '/image.png',
-  '/assets/icons/icon-512x512.png'
+  '/manifest.json'
 ];
 
 self.addEventListener('install', event => {
