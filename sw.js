@@ -2,12 +2,12 @@ const CACHE_NAME = 'linkshare-v1';
 const STATIC_CACHE_URLS = [
   '/',
   '/index.html',
-  '/assets/css/style.css',
-  '/assets/js/app.js',
-  '/assets/js/components/LinkItem.js',
-  '/assets/js/components/LinkList.js',
-  '/assets/js/components/CategoryFilter.js',
-  '/assets/icons/icon-192x192.png',
+  '/style.css',
+  '/app.js',
+  '/LinkItem.js',
+  '/LinkList.js',
+  '/CategoryFilter.js',
+  '/image.png',
   '/assets/icons/icon-512x512.png'
 ];
 
