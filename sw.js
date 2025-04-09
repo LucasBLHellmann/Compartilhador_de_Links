@@ -1,6 +1,5 @@
 const CACHE_NAME = 'linkshare-v1';
 const STATIC_CACHE_URLS = [
-  '/',
   '/index.html',
   '/style.css',
   '/app.js',
