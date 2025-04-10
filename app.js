@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
       linkList.addLink(linkData);
     }
 
-    initForm(); // Resetar o formulário após salvar
+    initForm();
   });
 
   linkList.addEventListener('edit-request', (e) => {
@@ -63,15 +63,13 @@ document.addEventListener('DOMContentLoaded', () => {
     linkList.render(e.detail.category);
   });
 
-  // Renderizar a lista de links ao carregar a página
   linkList.render();
 
   initForm();
 
   const cancelButton = document.getElementById('cancel-btn');
 
-  // Evento para limpar os campos ao clicar em "Cancelar"
   cancelButton.addEventListener('click', () => {
-    initForm(); // Resetar o formulário
+    initForm();
   });
 });

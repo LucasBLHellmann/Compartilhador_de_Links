@@ -56,7 +56,6 @@
   <script src="app.js" type="module"></script>
 
   <script>
-    // Registra o SW
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
         navigator.serviceWorker.register('sw.js')

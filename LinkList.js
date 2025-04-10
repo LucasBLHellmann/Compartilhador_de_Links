@@ -2,11 +2,11 @@ class LinkList extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: 'open' });
-    this.links = []; // Inicializar como array vazio
+    this.links = [];
   }
 
   connectedCallback() {
-    this.links = JSON.parse(localStorage.getItem('links')) || []; // Carregar links do localStorage
+    this.links = JSON.parse(localStorage.getItem('links')) || [];
     this.render();
     this.addEventListener('edit-link', this.handleEditLink);
     this.addEventListener('delete-link', this.handleDeleteLink);
@@ -70,16 +70,16 @@ class LinkList extends HTMLElement {
   }
 
   addLink(newLink) {
-    this.links.push(newLink); // Adicionar o novo link ao array
-    localStorage.setItem('links', JSON.stringify(this.links)); // Atualizar o localStorage
+    this.links.push(newLink);
+    localStorage.setItem('links', JSON.stringify(this.links));
     this.render();
   }
 
   updateLink(updatedLink) {
     this.links = this.links.map(link =>
       link.id === updatedLink.id ? updatedLink : link
-    ); // Atualizar o link existente
-    localStorage.setItem('links', JSON.stringify(this.links)); // Atualizar o localStorage
+    );
+    localStorage.setItem('links', JSON.stringify(this.links));
     this.render();
   }
 }
